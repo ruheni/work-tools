@@ -1,0 +1,63 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    /**
+     * This re-organizes your imports for you.
+     */
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    /**
+     * This nest like files together!
+     */
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+      "*.ts": "${capture}.*.ts, ${capture}.*.tsx",
+      "*.tsx": "${capture}.ts, ${capture}.*.ts, ${capture}.*.tsx",
+      "tsconfig.json": "tsconfig.*.json",
+      "package.json": "package-lock.json, yarn.lock, .npmrc"
+    },
+
+    /**
+     * This allows vscode to auto arranged your imports for you.
+     */
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    /**
+     * This turns the auto tests runs for the jest extensions.
+     */
+    "jest.autoRun": "off",
+    "typescript.inlayHints.enumMemberValues.enabled": false,
+    "typescript.inlayHints.functionLikeReturnTypes.enabled": false,
+    "typescript.inlayHints.parameterNames.enabled": "literals",
+    "typescript.inlayHints.parameterTypes.enabled": true,
+    "typescript.inlayHints.propertyDeclarationTypes.enabled": false,
+    "typescript.inlayHints.variableTypes.enabled": false,
+    /**
+     *  This allows typescript to prefer import `paths` in your tsconfig folder.
+     */
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    /**
+     * This allows vscode to auto arranged your imports for you.
+     */
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    /**
+     *   This forces vscode to use your local typescript version for the project.
+     */
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "window.title": "${activeEditorShort}${separator} Shane's Littera App",
+    "cSpell.words": ["Nuxt"]
+  },
+  "extensions": {
+    "recommendations": [
+      "Vue.vscode-typescript-vue-plugin",
+      "Vue.volar",
+      "orta.vscode-jest",
+      "zhihaocui.ts-interface-sorter",
+      "yzhang.markdown-all-in-one"
+    ]
+  }
+}
